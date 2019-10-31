@@ -6,6 +6,7 @@ package main
 
 import (
 	"bufio"
+	"context"
 	"fmt"
 	"github.com/OWASP/Amass/requests"
 	"github.com/OWASP/Amass/resolvers"
@@ -19,7 +20,7 @@ func main() {
 
 	setDebugMode()
 
-	pool := resolvers.SetupResolverPool([]string{"8.8.8.8"}, false, false, nil)
+	pool := resolvers.SetupResolverPool([]string{"1.1.1.1", "8.8.8.8", "64.6.64.6", "74.82.42.42", "1.0.0.1", "8.8.4.4", "9.9.9.10", "64.6.65.6", "77.88.8.1"}, false, false, nil)
 	if pool == nil {
 		return
 	}
@@ -73,7 +74,7 @@ func main() {
 		}
 
 		// Check if the sub domain is a wildcard
-		if pool.MatchesWildcard(req) {
+		if pool.MatchesWildcard(context.TODO(), req) {
 			if debugmode {
 				fmt.Printf("Wildcard:%s (Domain:%s)\n", name_str, domain_str)
 			}
