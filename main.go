@@ -19,7 +19,7 @@ func main() {
 
 	setDebugMode()
 
-	pool := resolvers.SetupResolverPool([]string{"8.8.8.8"}, false, false)
+	pool := resolvers.SetupResolverPool([]string{"8.8.8.8"}, false, false, nil)
 	if pool == nil {
 		return
 	}
