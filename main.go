@@ -8,8 +8,8 @@ import (
 	"bufio"
 	"context"
 	"fmt"
-	"github.com/OWASP/Amass/requests"
-	"github.com/OWASP/Amass/resolvers"
+	"github.com/OWASP/Amass/v3/requests"
+	"github.com/OWASP/Amass/v3/resolvers"
 	"os"
 	"strings"
 )
