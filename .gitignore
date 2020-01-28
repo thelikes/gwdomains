@@ -2,3 +2,5 @@
 .*.swp
 massdns-*
 test-*
+gwdomains
+go.sum
