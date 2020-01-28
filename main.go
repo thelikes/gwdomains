@@ -20,7 +20,7 @@ func main() {
 
 	setDebugMode()
 
-	pool := resolvers.SetupResolverPool([]string{"1.1.1.1", "8.8.8.8", "64.6.64.6", "74.82.42.42", "1.0.0.1", "8.8.4.4", "9.9.9.10", "64.6.65.6", "77.88.8.1"}, false, false, nil)
+	pool := resolvers.SetupResolverPool([]string{"1.1.1.1", "1.0.0.1", "8.8.8.8", "8.8.4.4", "9.9.9.9", "9.9.9.10", "77.88.8.8", "77.88.8.1", "208.67.222.222", "208.67.220.220"}, false, false, nil)
 	if pool == nil {
 		return
 	}
