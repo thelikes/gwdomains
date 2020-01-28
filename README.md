@@ -24,6 +24,12 @@ domains. For use with tools like altdns, dnsgen, and syborg.
 
 `cat mutated.txt | gwdomains`
 
+#### Debug
+
+Verbose output:
+
+`cat mutated.txt |MYGODEBUG=true gwdomains`
+
 ## Thanks
 
 HuG3 thanks to OWASP Amass
