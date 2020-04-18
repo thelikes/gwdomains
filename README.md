@@ -4,7 +4,7 @@ Get (rid of) Wildcard Domains
 
 ## Install
 
-go get github.com/fuzzerk/gwdomains
+go get github.com/thelikes/gwdomains
 
 ## Run
 
